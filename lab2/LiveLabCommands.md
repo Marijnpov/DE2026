@@ -8,7 +8,7 @@ mkdir models
 
 sudo docker build -t indikakuma/training-api:0.0.1 .
 
-sudo docker run -p  5002:5000 -v /home/indika_kuma/models:/usr/src/trainapp/models -d --name=training-api indikakuma/training-api:0.0.1
+sudo docker run -p  5002:5000 -v /home/marijnpovee/models:/usr/src/trainapp/models -d --name=training-api marijnpovee/training-api:0.0.1
 
 ## Create firewall rule
 
