@@ -40,3 +40,7 @@ sudo docker rmi -f $(sudo docker images -aq)
 # Delete everything
 
 sudo docker system prune -a --volumes
+
+# Notes
+
+Cloud Build trigger test: change to the lab2 folder, 9 October 2026.
