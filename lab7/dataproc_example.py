@@ -9,7 +9,7 @@ spark = SparkSession.builder.config(conf=sparkConf).getOrCreate()
 # Load data from BigQuery.
 df = spark.read \
   .format("bigquery") \
-  .load("your_project_id.labdataset.retaildata")    # project_id.datatset.tablename. Use your project id
+  .load("data-engineering-jads-509008.labdataset.retaildata")    # project_id.datatset.tablename. Use your project id
 df.printSchema()
 df.show(4)
 words = df.where(df.Country == "France")
